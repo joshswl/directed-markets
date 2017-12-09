@@ -10,6 +10,12 @@ $m-gutter: 1rem;
 @import 'reset';
 @import 'services';
 
+.nav {
+    padding: $m-gutter;
+    display: flex;
+    justify-content: space-around;
+}
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -18,4 +24,8 @@ $m-gutter: 1rem;
         padding: $m-gutter;
         color: $c-black;
     }
+}
+
+.logo {
+    width: $m-gutter * 15;
 }
