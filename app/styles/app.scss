@@ -10,10 +10,23 @@ $m-gutter: 1rem;
 @import 'reset';
 @import 'services';
 
+.section {
+  padding: $m-gutter;
+}
+
+.container {
+  max-width: $m-gutter * 65;
+  margin: auto;
+}
+
 .nav {
     padding: $m-gutter;
     display: flex;
     justify-content: space-around;
+
+    &-item {
+        text-transform: uppercase;
+    }
 }
 
 .navbar {
@@ -28,4 +41,10 @@ $m-gutter: 1rem;
 
 .logo {
     width: $m-gutter * 15;
+}
+
+.footer {
+    padding: $m-gutter;
+    background: $c-black;
+    color: $c-white;
 }

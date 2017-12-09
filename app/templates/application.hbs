@@ -1,14 +1,17 @@
 <div class="app">
     <nav class="nav">
-        <img src="/img/directed-markets-logo.png" alt="" class="logo">
+        {{#link-to "home"}}<img src="/img/directed-markets-logo.png" alt="" class="logo">{{/link-to}}
         <ul class="navbar">
-          <li>{{#link-to "home"}}Home{{/link-to}}</li>
-          <li>{{#link-to "about"}}About Us{{/link-to}}</li>
-          <li>{{#link-to "services"}}Services{{/link-to}}</li>
-          <li>{{#link-to "clients"}}Clients{{/link-to}}</li>
-          <li>{{#link-to "contact"}}Contact{{/link-to}}</li>
+          <li class="nav-item">{{#link-to "about"}}About{{/link-to}}</li>
+          <li class="nav-item">{{#link-to "services"}}Services{{/link-to}}</li>
+          <li class="nav-item">{{#link-to "clients"}}Clients{{/link-to}}</li>
+          <li class="nav-item">{{#link-to "contact"}}Contact{{/link-to}}</li>
         </ul>
     </nav>
-</div>
 
 {{outlet}}
+
+    <footer class="footer">
+        <p>© 2017 Directed Markets</p>
+    </footer>
+</div>
