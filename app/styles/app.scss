@@ -47,4 +47,8 @@ $m-gutter: 1rem;
     padding: $m-gutter;
     background: $c-black;
     color: $c-white;
+
+    &-para {
+        width: $m-gutter * 20;
+    }
 }
