@@ -1,6 +1,21 @@
-@import 'reset';
-@import 'home';
-@import 'services';
-@import 'clients';
+$c-black: #000000;
+$c-white: #ffffff;
+
+$m-gutter: 1rem;
+
 @import 'about';
+@import 'clients';
 @import 'contact';
+@import 'home';
+@import 'reset';
+@import 'services';
+
+.navbar {
+    display: flex;
+    justify-content: center;
+
+    & li {
+        padding: $m-gutter;
+        color: $c-black;
+    }
+}
