@@ -23,24 +23,23 @@ $m-gutter: 1rem;
 }
 
 .nav {
-    padding: $m-gutter;
+    padding: $m-gutter / 2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     &-item {
+        margin-top: $m-gutter * 4;
+        padding: 0 $m-gutter;
+        color: $c-black;
         text-transform: uppercase;
+        font-size: 14px;
     }
 }
 
 .navbar {
     display: flex;
     justify-content: center;
-
-    & li {
-        padding: $m-gutter;
-        color: $c-black;
-    }
 }
 
 .logo {

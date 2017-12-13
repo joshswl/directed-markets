@@ -3,15 +3,16 @@
     color: $c-white;
     background: linear-gradient(rgba($c-dark-grey,.5),rgba($c-dark-grey,.5)), url('/img/home-banner.jpg') no-repeat center fixed;
     background-size: cover;
-    height: 35rem;
+    height: 40rem;
 
     &-text {
+        padding-top: 20%;
         text-align: center;
         font-size: $m-gutter * 1.5;
-        font-weight: lighter;
 
         &__title {
-            padding: $m-gutter * 6;
+            padding: $m-gutter * 2 0;
+            margin: 0;
         }
 
         &__subtitle {
