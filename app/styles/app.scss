@@ -1,8 +1,11 @@
 $c-black: #000000;
 $c-white: #ffffff;
+$c-dark-grey: #3f3f3f;
+$c-light-grey: #a9a9a9;
 
 $m-gutter: 1rem;
 
+@import 'media';
 @import 'about';
 @import 'clients';
 @import 'contact';
@@ -23,6 +26,7 @@ $m-gutter: 1rem;
     padding: $m-gutter;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     &-item {
         text-transform: uppercase;
@@ -45,8 +49,8 @@ $m-gutter: 1rem;
 
 .footer {
     padding: $m-gutter;
-    background: $c-black;
-    color: $c-white;
+    background: $c-white;
+    color: $c-light-grey;
 
     &-para {
         width: $m-gutter * 20;

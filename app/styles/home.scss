@@ -1,0 +1,21 @@
+.banner {
+    position: relative;
+    color: $c-white;
+    background: linear-gradient(rgba($c-dark-grey,.5),rgba($c-dark-grey,.5)), url('/img/home-banner.jpg') no-repeat center fixed;
+    background-size: cover;
+    height: 35rem;
+
+    &-text {
+        text-align: center;
+        font-size: $m-gutter * 1.5;
+        font-weight: lighter;
+
+        &__title {
+            padding: $m-gutter * 6;
+        }
+
+        &__subtitle {
+            margin: 0;
+        }
+    }
+}
