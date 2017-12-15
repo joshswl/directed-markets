@@ -5,13 +5,13 @@ $c-light-grey: #a9a9a9;
 
 $m-gutter: 1rem;
 
-@import 'media';
-@import 'about';
 @import 'clients';
 @import 'contact';
 @import 'home';
+@import 'about';
 @import 'reset';
 @import 'services';
+@import 'media';
 
 .section {
   padding: $m-gutter;
@@ -23,6 +23,9 @@ $m-gutter: 1rem;
 }
 
 .nav {
+    position: fixed;
+    width: 100%;
+    background: $c-white;
     padding: $m-gutter / 2;
     display: flex;
     justify-content: space-between;

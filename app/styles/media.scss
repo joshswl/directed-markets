@@ -4,4 +4,9 @@
         justify-content: center;
         flex-direction: column;
     }
+
+    .banner-text {
+        padding-top: 70%;
+        font-size: $m-gutter * 1.2;
+    }
 }

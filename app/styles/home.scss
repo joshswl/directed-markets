@@ -1,12 +1,11 @@
 .banner {
-    position: relative;
     color: $c-white;
     background: linear-gradient(rgba($c-dark-grey,.5),rgba($c-dark-grey,.5)), url('/img/home-banner.jpg') no-repeat center fixed;
     background-size: cover;
     height: 40rem;
 
     &-text {
-        padding-top: 20%;
+        padding-top: 27%;
         text-align: center;
         font-size: $m-gutter * 1.5;
 
@@ -17,6 +16,23 @@
 
         &__subtitle {
             margin: 0;
+        }
+    }
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex-basis: calc(100% / 3 - 1rem - 1rem);
+        flex-grow: 1;
+        margin: 1rem;
+
+        &--img {
+            background: linear-gradient(rgba($c-white,.5),rgba($c-white,.5)), url('/img/home-grid-1.jpg') no-repeat center;
+            background-size: cover;
+            height: 40rem;
         }
     }
 }
