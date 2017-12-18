@@ -21,18 +21,21 @@
 }
 
 .grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
+    grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+}
 
-    &__item {
-        flex-basis: calc(100% / 3 - 1rem - 1rem);
-        flex-grow: 1;
-        margin: 1rem;
+.main-content {
+    grid-column: 2/6;
+    background: linear-gradient(rgba($c-white,.5),rgba($c-white,.5)), url('/img/main-content.jpg') no-repeat center;
+    background-size: cover;
+    height: 25rem;
+}
 
-        &--img {
-            background: linear-gradient(rgba($c-white,.5),rgba($c-white,.5)), url('/img/home-grid-1.jpg') no-repeat center;
-            background-size: cover;
-            height: 40rem;
-        }
-    }
+.sidebar {
+    grid-column: 6/8;
+    background: linear-gradient(rgba($c-white,.5),rgba($c-white,.5)), url('/img/sidebar.jpg') no-repeat center;
+    background-size: cover;
+    height: 25rem;
 }
