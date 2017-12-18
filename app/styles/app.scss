@@ -1,7 +1,9 @@
 $c-black: #000000;
 $c-white: #ffffff;
+$c-off-white: #F0F5F6;
 $c-dark-grey: #3f3f3f;
 $c-light-grey: #a9a9a9;
+$c-navy-blue: #21243c;
 
 $m-gutter: 1rem;
 
@@ -25,7 +27,7 @@ $m-gutter: 1rem;
 .nav {
     position: fixed;
     width: 100%;
-    background: $c-white;
+    background: $c-off-white;
     padding: $m-gutter / 2;
     display: flex;
     justify-content: space-between;
@@ -33,9 +35,12 @@ $m-gutter: 1rem;
 
     &-item {
         padding: 0 $m-gutter;
-        color: $c-black;
         text-transform: uppercase;
         font-size: 14px;
+    }
+
+    &-link {
+        color: $c-navy-blue;
     }
 }
 

@@ -1,41 +1,66 @@
-.banner {
-    color: $c-white;
-    background: linear-gradient(rgba($c-dark-grey,.5),rgba($c-dark-grey,.5)), url('/img/home-banner.jpg') no-repeat center fixed;
-    background-size: cover;
-    height: 40rem;
+.home {
+    &-banner {
+        color: $c-white;
+        background: linear-gradient(rgba($c-navy-blue,.7),rgba($c-navy-blue,.2)), url('/img/home-banner.jpg') no-repeat center fixed;
+        background-size: cover;
+        height: 40rem;
+    
+        &-text {
+            margin-top: 25%;
+            text-align: center;
+            font-size: $m-gutter * 1.5;
+    
+            &__title {
+                margin: 0;
+            }
+        }
+    }
+    
+    &-grid {
+        position: static;
+        margin-top: -4rem;
+        display: grid;
+        grid-template-columns: 1fr repeat(6, minmax(auto, 12.5em)) 1fr;
+        grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
+    }
 
-    &-text {
-        padding-top: 27%;
-        text-align: center;
-        font-size: $m-gutter * 1.5;
+    &-list {
+        margin-top: -4rem;
+        color: $c-white;
+        background: linear-gradient(rgba($c-dark-grey,.9),rgba($c-navy-blue,.7));
+        height: 25rem;
+        padding: $m-gutter * 2;
+        display: grid;
+        grid-template-columns: 1fr repeat(6, minmax(auto, 12.5em)) 1fr;
+        grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
 
-        &__title {
-            padding: $m-gutter * 2 0;
-            margin: 0;
+        &-side {
+            padding: $m-gutter * 4 0;
+            grid-column: 2/5;
         }
 
-        &__subtitle {
-            margin: 0;
+        &-side:last-of-type {
+            grid-column: 5/8;
+        }
+
+        &-item {
+            text-align: right;
+            padding: $m-gutter / 2;
         }
     }
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 1fr repeat(6, minmax(auto, 10em)) 1fr;
-    grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);
-}
-
 .main-content {
     grid-column: 2/6;
-    background: linear-gradient(rgba($c-white,.5),rgba($c-white,.5)), url('/img/main-content.jpg') no-repeat center;
+    background: linear-gradient(rgba($c-off-white,.3),rgba($c-off-white,.3)), url('/img/main-content.jpg') no-repeat center;
     background-size: cover;
-    height: 25rem;
+    height: 35rem;
 }
 
 .sidebar {
     grid-column: 6/8;
-    background: linear-gradient(rgba($c-white,.5),rgba($c-white,.5)), url('/img/sidebar.jpg') no-repeat center;
+    background: $c-white no-repeat center;
     background-size: cover;
-    height: 25rem;
+    padding: $m-gutter * 2;
+    color: $c-navy-blue;
 }

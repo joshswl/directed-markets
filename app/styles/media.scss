@@ -5,8 +5,22 @@
         flex-direction: column;
     }
 
-    .banner-text {
-        padding-top: 70%;
-        font-size: $m-gutter * 1.2;
+    .home {
+        
+        &-banner-text {
+            padding-top: 60%;
+            font-size: $m-gutter;
+        }
+
+        &-grid {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
     }
 }
