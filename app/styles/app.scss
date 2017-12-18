@@ -7,7 +7,7 @@ $c-navy-blue: #21243c;
 
 $m-gutter: 1rem;
 
-@import 'clients';
+@import 'work';
 @import 'contact';
 @import 'home';
 @import 'about';
@@ -34,18 +34,20 @@ $m-gutter: 1rem;
     align-items: center;
 
     &-item {
-        padding: 0 $m-gutter;
         text-transform: uppercase;
         font-size: 14px;
     }
 
     &-link {
         color: $c-navy-blue;
+        padding: $m-gutter;
     }
 }
 
 .navbar {
     display: flex;
+    margin-top: 5%;
+    padding: 0 $m-gutter * 2;
 }
 
 .logo {
