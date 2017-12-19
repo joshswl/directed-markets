@@ -43,6 +43,14 @@
             grid-column: 5/8;
         }
 
+        &-title {
+            padding: $m-gutter;
+        }
+
+        &-para {
+            padding: $m-gutter;
+        }
+
         &-item {
             text-align: right;
             padding: $m-gutter / 2;
