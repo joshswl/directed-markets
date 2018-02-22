@@ -34,7 +34,7 @@
       grid-column: 2 / 5;
       padding: $m-gutter * 4 0;
 
-      :last-of-type {
+      &:last-of-type {
         grid-column: 5 / 8;
       }
     }
